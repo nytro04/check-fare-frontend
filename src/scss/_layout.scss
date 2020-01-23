@@ -1,3 +1,64 @@
 h5 {
   font-size: 1rem;
 }
+
+.header {
+  background-color: #fef7f6;
+  // @include respond(phone) {
+  //   .card-group {
+  //     display: flex;
+  //     flex-direction: row;
+  //   }
+  // }
+
+  &__top {
+    font-size: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+
+    justify-content: space-between;
+
+    &--contact {
+      display: flex;
+      // align-self: center;
+      // justify-content: space-between;
+    }
+
+    &--social {
+      align-self: flex-start;
+
+      i {
+        color: #000;
+      }
+    }
+  }
+}
+
+.carousel-item {
+  min-height: 60vh;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-image {
+  background-size: auto;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  &-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("./../assets/iphone11.jpg");
+  }
+  &-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("./../assets/Samsung-S10-TopBanner1.jpg");
+  }
+  &-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("./../assets/macbook3.jpg");
+  }
+}
